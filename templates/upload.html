@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Excel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 340px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+        .form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        .form input[type="file"] {
+            margin-bottom: 10px;
+        }
+        .form button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Upload Excel</h1>
+        <form action="/upload" method="post" enctype="multipart/form-data" class="form">
+            <label for="file">Choose Excel File:</label>
+            <input type="file" id="file" name="file" required>
+            <button type="submit">Upload</button>
+        </form>
+    </div>
+</body>
+</html>
